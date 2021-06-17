@@ -1,0 +1,3 @@
+docker run -d -p 81:8080 --name jenkins jenkins/jenkins:lts-jdk11
+
+docker run -d -p 81:8080 --name jenkins -v D:/Jenkins_Docker:/var/jenkins_home jenkins/jenkins:lts-jdk11
