@@ -1,2 +1,4 @@
 FROM jenkins/jenkins:lts-jdk11
-RUN apk -U add vim
+USER root
+RUN apt-get update && apt-get --assume-yes install vim
+USER jenkins
